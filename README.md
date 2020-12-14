@@ -7,3 +7,11 @@ I will link below any prerequisites to getting started. Any individual directory
 * [Node.js](https://nodejs.org/en/)
 * [VS Code](https://code.visualstudio.com/) -- If you prefer another IDE, this is not required
 * [Discord](https://discord.com/) -- You must have a discord account, and a discord server on which you have server management permissions (you may have to create a new server for this)
+
+# Current Tutorials
+1. [Basic Bot](/basic_bot) -- A beginner's tutorial for your first discord bot
+
+# Future Tutorials -- To Be Written
+1. Making API calls
+2. Moderator bots
+3. Hosting your bot
