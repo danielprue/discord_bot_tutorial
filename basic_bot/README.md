@@ -1,5 +1,6 @@
 # Basic Bot
-This is intended as an introduction for building your first bot. This will have step by step instructions, so you should be able to follow along with no background required.
+This is intended as an introduction for building your first bot. If you have written discord bots before and are looking for some reminders/quick links, try [this](./reminder-for-advanced-users.md) instead. 
+This will have step by step instructions, so you should be able to follow along with no background required.
 I will more or less be following the documentation [here](https://discordjs.guide/). The final code for this bot will be a bot that reads any message on your server and writes
 that message to your console.
 
