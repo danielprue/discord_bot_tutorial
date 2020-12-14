@@ -6,7 +6,7 @@ that message to your console.
 # Getting Started
 The first thing you will need to do is create a workspace to place your code. Open up a terminal, and create a new folder. If you are unfamiliar with the terminal,
 you can type `mkdir <new folder name>` to create a new folder, and `cd <folder name>` to step into that folder. With `&&` in the middle, you can do both in a single command.
-*** image 1 here ***
+![terminal commands sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/mkdir.PNG?raw=true)
 
 Once you are in the directory you want to be in, start a new project by typing `npm init`. This will create a new project with a `package.json` file. You can also type `code .` 
 into your terminal at this point to open up your code in Visual Studio Code. Run `npm install discord.js` in your terminal to install the package we need (ignore any warnings you
@@ -15,17 +15,18 @@ get here), which will conclude setup.
 # Discord dashboard
 Next we need to go to the discord end of things and set up our bot there. Start by going to the [Discord Developer Dashboard](https://discord.com/developers/applications)
 and create a new application.
-*** image 2 here ***
+![Create new application sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/discord_new_app.PNG?raw=true)
 
 Now that we have an application, we can go to its `Bot` tab on the left, and click `Add Bot`
-*** image 3 here
+![Add bot sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/add_bot.PNG?raw=true)
 
 We now have a bot that we can invite to the server. To do this go to the [permissions calculator](https://discordapi.com/permissions.html#0), select the necessary permissions 
 for your bot (for this tutorial, we can check `Read Messages` and nothing else, although you may want other permissions if you plan on expanding this bot), 
 and paste your client ID into the box at the bottom. This will generate an invite link for your bot. If this works, you should be able to now see your bot under 
 the users of your discord server.
+![permission calculator sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/permissions.PNG?raw=true)
 
-*** images 4 and 5 ***
+![client ID sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/client_id.PNG?raw=true)
 
 # Coding our bot
 Now that we have everything ready with our packages and discord environment, we are ready to start coding. The first step is going to be adding 2 files to our main directory.
@@ -38,7 +39,7 @@ Let's start with the `config.json`. This entire file is going to be a single Jav
 }
 ```
 I've left the token blank here, because that will be specific to your bot. To get your token, go back to your discord dashboard, and copy it from the `Bot` tab
-*** image 6 ***
+![bot token sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/bot_token.PNG?raw=true)
 
 And that's all there is to the file. It is extremely simple, but there is an important reason we put it here. Anyone who has the token to our bot has full access to it, 
 and that can be pretty dangerous depending on the scope of our bot. Our config file will be ignored by a standard push up to Github, so this is a safe place for us to 
