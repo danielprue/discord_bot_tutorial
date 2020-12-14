@@ -6,6 +6,7 @@ that message to your console.
 # Getting Started
 The first thing you will need to do is create a workspace to place your code. Open up a terminal, and create a new folder. If you are unfamiliar with the terminal,
 you can type `mkdir <new folder name>` to create a new folder, and `cd <folder name>` to step into that folder. With `&&` in the middle, you can do both in a single command.
+
 ![terminal commands sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/mkdir.PNG?raw=true)
 
 Once you are in the directory you want to be in, start a new project by typing `npm init`. This will create a new project with a `package.json` file. You can also type `code .` 
@@ -18,12 +19,14 @@ and create a new application.
 ![Create new application sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/discord_new_app.PNG?raw=true)
 
 Now that we have an application, we can go to its `Bot` tab on the left, and click `Add Bot`
+
 ![Add bot sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/add_bot.PNG?raw=true)
 
 We now have a bot that we can invite to the server. To do this go to the [permissions calculator](https://discordapi.com/permissions.html#0), select the necessary permissions 
 for your bot (for this tutorial, we can check `Read Messages` and nothing else, although you may want other permissions if you plan on expanding this bot), 
 and paste your client ID into the box at the bottom. This will generate an invite link for your bot. If this works, you should be able to now see your bot under 
 the users of your discord server.
+
 ![permission calculator sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/permissions.PNG?raw=true)
 
 ![client ID sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/client_id.PNG?raw=true)
@@ -39,6 +42,7 @@ Let's start with the `config.json`. This entire file is going to be a single Jav
 }
 ```
 I've left the token blank here, because that will be specific to your bot. To get your token, go back to your discord dashboard, and copy it from the `Bot` tab
+
 ![bot token sample](https://github.com/danielprue/discord_bot_tutorial/blob/main/basic_bot/photos/bot_token.PNG?raw=true)
 
 And that's all there is to the file. It is extremely simple, but there is an important reason we put it here. Anyone who has the token to our bot has full access to it, 
