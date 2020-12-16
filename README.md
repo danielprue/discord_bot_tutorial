@@ -10,8 +10,8 @@ I will link below any prerequisites to getting started. Any individual directory
 
 # Current Tutorials
 1. [Basic Bot](/basic_bot) -- A beginner's tutorial for your first discord bot
+2. [Bot Deployment](./bot_hosting) -- Use Heroku to deploy your bot for free
 
 # Future Tutorials -- To Be Written
 1. Making API calls
 2. Moderator bots
-3. Hosting your bot
