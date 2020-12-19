@@ -174,9 +174,40 @@ to await before each react to ensure we get these in order.
     });
 ```
 
-*** somehow i have to count the reactions on this message after 2 minutes lol
-*** send another message based on reaction count
+Next, we can set a timer, and count all the reactions at the end of the timer. Then, we can send another message announcing the correct answer and the response rate. The `setTimeout` function here will let us start a function after a delay, giving users a chance to vote. Then, we want to tally everything up and send the message with the answer.
+
+```javascript
+      message.channel.send(formatted_question_answer).then(async (message) => {
+      await message.react('1️⃣');
+      await message.react('2️⃣');
+      await message.react('3️⃣');
+      await message.react('4️⃣');
+
+      setTimeout(() => {
+        reaction_count = {
+          1: message.reactions.cache.get('1️⃣').count - 1,
+          2: message.reactions.cache.get('2️⃣').count - 1,
+          3: message.reactions.cache.get('3️⃣').count - 1,
+          4: message.reactions.cache.get('4️⃣').count - 1,
+        };
+        let total_votes = 0;
+        for (r of reaction_count) total_votes += reaction_count[r];
+
+        message.channel.send(
+          `The correct answer was option ${correct_answer}. ${reaction_count[correct_answer]} answered correctly out of ${total_votes} total guesses.`
+        );
+      }, 60000);
+    });
+```
+
+At this point, the bot will ask a random question, present 4 potential answers, collect votes on the right answer, and announce the results after two minutes. This concludes part 2.
+
+[completed part 2 code](./completed-part-2-index.js)
+
 *** embed -- use posters (part 3)
+- set embed title
+- set embed thumbnail/image?
+
 
 
 
